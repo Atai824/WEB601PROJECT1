@@ -47,7 +47,7 @@ header p {
     background-color: #0078a0;
     border: none;
 }
-.btn-primary :hover {
+.btn-primary:hover {
     background-color: #005f79;
 }
 /* Vue component */
@@ -83,6 +83,10 @@ footer .social a:hover {
         font-size: 2rem;
     }
     header p {
-        font-size: 1 rem;
+        font-size: 1rem;
     }
+}
+.navbar-brand img {
+    height: 60px;
+    margin-right: 10px;
 }
