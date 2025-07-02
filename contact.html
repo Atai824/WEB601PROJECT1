@@ -1,88 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Swimming classes for children - Splasches">
-        <title>Splashes Swiming School</title>
-        <!-- Required Bootstrap CSS -->
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-         <!-- style.css -->
-          <link rel="stylesheet" href="css/style.css">
-          <!-- Font Awesome -->
-           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <!-- Navigation -->
-         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"><img src="images1/splashes-logo.png" alt="Splashes Logo" height="170"></a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
-                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-         </nav>
-         <header>
-            <h1>Welcome to Splasches</h1>
-            <p>Our swimming programs are tailored to teach children water safety and swimming skills in a supportive and fun environment.</p>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#registerModal">Register Now</button>
-         </header>
-         <!-- VUE component -->
-          <div id="vueApp" class="text-center mb-5">
-            <p>{{ message }}</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Us - Splashes Swimming School">
+  <title>Contact Us - Splashes Swimming School</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="contact">
+  <div id="container">
+    <header>
+      <div class="main-header">
+        <div class="logo">
+          <img src="images1/splashes-logo.png" alt="Splashes Logo" width="125">
+        </div>
+        <nav id="navigation" class="navbar navbar-expand-lg navbar-dark bg-primary p-0">
+          <button class="navbar-toggler ml-auto mr-3" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-uppercase">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about.html">About</a></li>
+              <li><a class="nav-link" href="schedule.html">Lessons</a></li>
+              <li><a class="nav-link" href="register.html">Register</a></li>
+              <li class="active"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
           </div>
-          <!-- Register Modal -->
-           <div class="modal fade" id="registerModal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <form>
-                        <div class="modal-header">
-                            <h5 class="modal-title">Register</h5>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-                        <div class="modal-body">
-                            <input type="text" class="form-control mb-2" placeholder="Your Name" required>
-                            <input type="email" class="form-control mb-2" placeholder="Email" required>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-           </div>
-           <!-- Footer -->
-            <footer class="text-center py-4 bg-light">
-                &copy; 2025 Splashes Swimming School
-                <div class="social mt-2">
-                    <a href="#" class="fa fa-facebook mr-2"></a>
-                    <a href="#" class="fa fa-instagram mr-2"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                </div>
-            </footer>
-            <!-- Vue init -->
-             <script>
-                new Vue({
-                    el: '#vueApp',
-                    data: {
-                        message: 'Welcome to our swimming school!'
-                    }
-                });
-             </script>
-             <script src="js/script.js"></script>
-             <!-- Vue link -->
-              <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-              <!-- jQuery -->
-               <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-               <!-- Bootstrap JS -->
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+        </nav>
+      </div>
+    </header>
+    <main class="container py-5">
+      <h2>Contact Us</h2>
+      <fieldset>
+        <legend>Contact Form</legend>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="contactName" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="contactEmail" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </fieldset>
+    </main>
+  </div>
+
+  <footer>
+    <div class="nondisclaimer text-center py-3">
+      &copy; 2025 Splashes Swimming School
+      <div class="social mt-2">
+        <a href="#" class="fa fa-facebook mr-2"></a>
+        <a href="#" class="fa fa-instagram mr-2"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </div>
+    </div>
+    <div class="disclaimer text-center py-2">
+      <p>This website is created for educational purposes at Westcliff University.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
